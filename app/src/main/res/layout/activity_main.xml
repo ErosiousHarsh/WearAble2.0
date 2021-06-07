@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/topBanner"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/gradient_blue" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="WearAble 2.0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/motto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="Login to get personalized feed"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="90dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/delius"
+            android:text="Sign-in"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/color_blue"
+            android:layout_below="@+id/motto"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignup"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color_blue"
+            android:layout_below="@id/btnLogin"
+            android:backgroundTint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="Sign-up"
+            android:textAllCaps="false"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I don't want to sign in/up right now"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/color_blue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signinSignup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="300dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/delius"
+        android:text="Signin"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/color_blue" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignup"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/color_blue"
+        android:layout_below="@id/btnLogin"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:text="Signup"
+        android:textAllCaps="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I don't want to sign in/up right now"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/color_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+</RelativeLayout>
